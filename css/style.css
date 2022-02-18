@@ -1,0 +1,95 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --countdown-custom-color: #d8202e;
+}
+
+
+.leonardo-out {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    border: 1px solid black;
+}
+
+.countdown-custom-container {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 240px;
+    height: 80px;
+    padding-bottom: 5px;
+    border: 2px solid var(--countdown-custom-color);
+    border-radius: 5px;
+}
+
+p.countdown-custom-title {
+    position: absolute;
+    display: inline-block;
+    padding: 0px 10px;
+    font-weight: bold;
+    background-color: white;
+    top: -9px;
+    left: 50%;
+    margin-left: -66px;
+}
+
+.countdown-custom-time {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--countdown-custom-color);
+    letter-spacing: 4px;
+}
+
+.countdown-custom-days,
+.countdown-custom-hrs,
+.countdown-custom-min {
+    position: relative;
+}
+
+.countdown-custom-days::after,
+.countdown-custom-hrs::after,
+.countdown-custom-min::after {
+    font-size: 8px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    bottom: -10px;
+    letter-spacing: 0px;
+}
+
+.countdown-custom-days::after {
+    content: 'DAYS';
+}
+
+.countdown-custom-hrs::after {
+    content: 'HRS';
+}
+
+.countdown-custom-min::after {
+    content: 'MIN';
+}
+
+.countdown-custom-message {
+    width: 240px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--countdown-custom-color);
+}
+
+.countdown-custom-message-bottom {
+    margin-top: 5px;
+    font-weight: bold;
+}
